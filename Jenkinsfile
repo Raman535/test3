@@ -5,7 +5,7 @@ pipeline {
     stage('Demo Active Choices Parameter') {
       steps {
         echo "Tier Selected ${tier}"
-        echo "Services Selected ${services}"
+        echo "Services Selected ${services.release_tag}"
       }
     }
   }
